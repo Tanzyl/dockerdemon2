@@ -1,0 +1,62 @@
+---
+- name: Setup Odoo, Jitsu, and Apache Superset
+  hosts: all
+  tasks:
+    - name: Install Docker
+      apt:
+        name: docker.io
+        state: present
+      tags: [docker]
+
+    - name: Pull PostgreSQL image
+      docker_image:
+        name: postgres:15
+      tags: [postgres]
+
+    - name: Run PostgreSQL container for Odoo
+      docker_container:
+        name: db
+        image: postgres:15
+        env:
+          POSTGRES_USER: odoo
+          POSTGRES_PASSWORD: odoo
+          POSTGRES_DB: postgres
+        state: started
+      tags: [odoo]
+
+    - name: Pull Redis image
+      docker_image:
+        name: redis
+      tags: [redis]
+
+    - name: Get Redis container IP
+      shell: docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' $(docker ps -qf "name=some-redis")
+      register: redis_ip
+      tags: [redis]
+
+    - name: Run Jitsu container
+      docker_container:
+        name: jitsu
+        image: jitsucom/jitsu
+        env:
+          REDIS_URL: "redis://{{ redis_ip.stdout }}:6379"
+        ports:
+          - "8000:8000"
+        state: started
+      tags: [jitsu]
+
+    - name: Pull Apache Superset image
+      docker_image:
+        name: apache/superset
+      tags: [superset]
+
+    - name: Run Apache Superset container
+      docker_container:
+        name: superset
+        image: apache/superset
+        env:
+          SUPERSET_SECRET_KEY: "vQmRkwpRNm5u_6IKXBX9739bXkhiueMF"
+        ports:
+          - "8080:8088"
+        state: started
+      tags: [superset]
