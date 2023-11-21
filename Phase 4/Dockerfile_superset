@@ -1,0 +1,11 @@
+# Use an official Superset runtime as a parent image
+FROM apache/superset:latest
+
+# Your custom configurations if needed
+COPY superset_config.py /etc/superset/superset_config.py
+
+# Other configurations and dependencies
+# ...
+
+# Expose the Superset port
+EXPOSE 8088

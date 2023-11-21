@@ -1,0 +1,19 @@
+
+
+{
+    "app": {
+      "port": 3000,
+      "host": "0.0.0.0"
+    },
+    "logger": {
+      "level": "info"
+    },
+    "db": {
+      "host": "localhost",
+      "port": 5432,
+      "user": "jitsu_user",
+      "password": "jitsu_password",
+      "database": "jitsu_database"
+    }
+  }
+  

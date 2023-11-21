@@ -1,0 +1,11 @@
+# Use an official Odoo runtime as a parent image
+FROM odoo:latest
+
+# Your custom configurations if needed
+COPY odoo_config.conf /etc/odoo/odoo.conf
+
+# Other configurations and dependencies
+# ...
+
+# Expose the Odoo port
+EXPOSE 8069

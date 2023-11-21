@@ -1,0 +1,11 @@
+# Use the specific version of the Jitsu image
+FROM jitsucom/jitsu:1.44.8
+
+# Your custom configurations if needed
+COPY jitsu_config.json /app/config.json
+
+# Other configurations and dependencies
+# ...
+
+# Expose the Jitsu port
+EXPOSE 3000

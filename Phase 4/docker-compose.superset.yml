@@ -1,0 +1,15 @@
+version: '3'
+services:
+  superset:
+    build:
+      context: .
+      dockerfile: Dockerfile_superset
+    ports:
+      - "8088:8088"
+    networks:
+      - your_network
+    # Other configurations and dependencies
+    # ...
+networks:
+  your_network:
+    driver: bridge

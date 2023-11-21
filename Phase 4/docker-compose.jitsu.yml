@@ -1,0 +1,15 @@
+version: '3'
+services:
+  jitsu:
+    build:
+      context: .
+      dockerfile: Dockerfile_jitsu
+    ports:
+      - "3000:3000"
+    networks:
+      - your_network
+    # Other configurations and dependencies
+    # ...
+networks:
+  your_network:
+    driver: bridge

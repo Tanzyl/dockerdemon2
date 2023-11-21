@@ -1,0 +1,48 @@
+version: '3'
+services:
+  superset:
+    build:
+      context: .
+      dockerfile: ./Dockerfile_superset
+    ports:
+      - "8088:8088"
+    networks:
+      - your_network
+    environment:
+      SUPERSET_SECRET_KEY: "vQmRkwpRNm5u_6IKXBX9739bXkhiueMF"
+
+ 
+  odoo:
+    image: odoo:17
+    depends_on:
+      - db
+    ports:
+      - "8069:8069"
+    volumes:
+      - odoo-data:/var/lib/odoo
+
+  db:
+    image: postgres:16  # Update the PostgreSQL version to 16
+    environment:
+      POSTGRES_DB: odoo
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+    volumes:
+      - E:\PostGress\data:/var/lib/postgresql/data  # Update the data directory path
+    ports:
+      - "5432:5432"  # Map the container's PostgreSQL port 5432 to host port 5533
+ jitsu:
+    image: jitsucom/jitsu:1.44.8
+    environment:
+      REDIS_URL: "redis://devopsphase4-redis:6379"
+    ports:
+      - "3000:3000"
+    networks:
+      - your_network
+
+volumes:
+  odoo-data:
+
+networks:
+  your_network:
+    driver: bridge

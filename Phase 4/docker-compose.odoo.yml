@@ -1,0 +1,15 @@
+version: '3'
+services:
+  odoo:
+    build:
+      context: .
+      dockerfile: Dockerfile_odoo
+    ports:
+      - "8069:8069"
+    networks:
+      - your_network
+    # Other configurations and dependencies
+    # ...
+networks:
+  your_network:
+    driver: bridge
