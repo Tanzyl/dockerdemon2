@@ -1,0 +1,48 @@
+replicaCount: 2  # Increase the number of replicas to 2
+
+image:
+  repository: abubakarmehboob/abubakar  # Update with your Docker Hub repository
+  pullPolicy: IfNotPresent
+  tag: latest  # Specify the desired tag for your Docker image
+
+
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+
+serviceAccount:
+  create: true
+  annotations: {}
+  name: ""
+
+podAnnotations: {}
+
+podSecurityContext: {}
+securityContext: {}
+
+service:
+  type: NodePort  # or ClusterIP
+  port: 80
+
+ingress:
+  enabled: false
+
+  tls: []
+    # Uncomment if you have TLS settings
+
+resources:
+  limits:
+    cpu: 200m  # Adjust based on your application's resource requirements
+    memory: 256Mi
+
+autoscaling:
+  enabled: false
+  minReplicas: 1
+  maxReplicas: 5
+  targetCPUUtilizationPercentage: 80
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}

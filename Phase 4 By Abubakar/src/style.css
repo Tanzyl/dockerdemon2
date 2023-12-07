@@ -1,0 +1,436 @@
+.medical {
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.medical .div {
+  background: linear-gradient(180deg, rgb(244.37, 244.37, 244.37) 0%, rgba(245.44, 245.44, 245.44, 0.74) 100%);
+  background-color: rgba(255, 255, 255, 1);
+  height: 1080px;
+  position: relative;
+  width: 1920px;
+}
+
+.medical .overlap {
+  height: 969px;
+  left: 104px;
+  position: absolute;
+  top: 111px;
+  width: 1711px;
+}
+
+.medical .overlap-group {
+  height: 816px;
+  left: 633px;
+  position: absolute;
+  top: 153px;
+  width: 1078px;
+}
+
+.medical .overlap-2 {
+  height: 815px;
+  left: 110px;
+  position: absolute;
+  top: 1px;
+  width: 968px;
+}
+
+.medical .ellipse {
+  background: linear-gradient(180deg, rgb(94, 23, 235) 44.06%, rgb(255, 49, 49) 100%);
+  border-radius: 340px;
+  height: 680px;
+  left: 163px;
+  position: absolute;
+  top: 59px;
+  width: 680px;
+}
+
+.medical .doctor {
+  height: 815px;
+  left: 149px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 744px;
+}
+
+.medical .rectangle {
+  background-color: #ffffff;
+  border-radius: 14.34px;
+  box-shadow: 8.2px 13.32px 31.76px 1.02px #00000040;
+  height: 172px;
+  left: 0;
+  position: absolute;
+  top: 143px;
+  width: 356px;
+}
+
+.medical .rectangle-2 {
+  background-color: #ffffff;
+  border-radius: 14px;
+  box-shadow: 12px 8px 21px 4px #00000040;
+  height: 168px;
+  left: 616px;
+  position: absolute;
+  top: 473px;
+  width: 328px;
+}
+
+.medical .img {
+  height: 20px;
+  left: 833px;
+  position: absolute;
+  top: 23px;
+  width: 21px;
+}
+
+.medical .text-wrapper {
+  color: #5e17eb;
+  font-family: "Inter", Helvetica;
+  font-size: 64px;
+  font-weight: 400;
+  left: 866px;
+  letter-spacing: 0;
+  line-height: 23.1px;
+  position: absolute;
+  top: 657px;
+  width: 102px;
+}
+
+.medical .img-2 {
+  height: 49px;
+  left: 35px;
+  position: absolute;
+  top: 204px;
+  width: 62px;
+}
+
+.medical .charm-tick {
+  height: 48px;
+  left: 640px;
+  position: absolute;
+  top: 489px;
+  width: 48px;
+}
+
+.medical .vector {
+  height: 27px;
+  left: 646px;
+  position: absolute;
+  top: 544px;
+  width: 36px;
+}
+
+.medical .vector-2 {
+  height: 27px;
+  left: 646px;
+  position: absolute;
+  top: 587px;
+  width: 36px;
+}
+
+.medical .text-wrapper-2 {
+  color: #847a7a;
+  font-family: "Inter", Helvetica;
+  font-size: 24px;
+  font-weight: 700;
+  left: 697px;
+  letter-spacing: 1.32px;
+  line-height: 25.4px;
+  position: absolute;
+  top: 498px;
+  white-space: nowrap;
+  width: 205px;
+}
+
+.medical .text-wrapper-3 {
+  color: #847a7a;
+  font-family: "Inter", Helvetica;
+  font-size: 24px;
+  font-weight: 700;
+  left: 697px;
+  letter-spacing: 1.32px;
+  line-height: 25.4px;
+  position: absolute;
+  top: 545px;
+  white-space: nowrap;
+  width: 205px;
+}
+
+.medical .text-wrapper-4 {
+  color: #847a7a;
+  font-family: "Inter", Helvetica;
+  font-size: 24px;
+  font-weight: 700;
+  left: 697px;
+  letter-spacing: 1.32px;
+  line-height: 25.4px;
+  position: absolute;
+  top: 583px;
+  white-space: nowrap;
+  width: 205px;
+}
+
+.medical .text-wrapper-5 {
+  color: #847a7a;
+  font-family: "Inter", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 139px;
+  letter-spacing: 1.76px;
+  line-height: 33.9px;
+  position: absolute;
+  text-shadow: 0px 4px 49px #38d2aa;
+  top: 203px;
+  width: 148px;
+}
+
+.medical .vector-3 {
+  height: 30px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 122px;
+}
+
+.medical .overlap-group-2 {
+  height: 154px;
+  left: 810px;
+  position: absolute;
+  top: 0;
+  width: 314px;
+}
+
+.medical .rectangle-3 {
+  background-color: #ffffff;
+  border-radius: 14px;
+  box-shadow: 12px 8px 21px 4px #00000040;
+  height: 154px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 300px;
+}
+
+.medical .charm-tick-2 {
+  height: 48px;
+  left: 22px;
+  position: absolute;
+  top: 7px;
+  width: 48px;
+}
+
+.medical .text-wrapper-6 {
+  color: #847a7a;
+  font-family: "Inter", Helvetica;
+  font-size: 24px;
+  font-weight: 700;
+  left: 109px;
+  letter-spacing: 1.32px;
+  line-height: 25.4px;
+  position: absolute;
+  top: 18px;
+  white-space: nowrap;
+  width: 205px;
+}
+
+.medical .vector-4 {
+  height: 27px;
+  left: 28px;
+  position: absolute;
+  top: 55px;
+  width: 36px;
+}
+
+.medical .text-wrapper-7 {
+  color: #847a7a;
+  font-family: "Inter", Helvetica;
+  font-size: 24px;
+  font-weight: 700;
+  left: 109px;
+  letter-spacing: 1.32px;
+  line-height: 25.4px;
+  position: absolute;
+  top: 57px;
+  white-space: nowrap;
+  width: 205px;
+}
+
+.medical .overlap-3 {
+  height: 331px;
+  left: 0;
+  position: absolute;
+  top: 408px;
+  width: 683px;
+}
+
+.medical .gynaeautocare {
+  color: #5b5959;
+  font-family: "Inter", Helvetica;
+  font-size: 30px;
+  font-weight: 300;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 31.8px;
+  position: absolute;
+  top: 0;
+  width: 683px;
+}
+
+.medical .rectangle-4 {
+  background-color: #ff3131;
+  border-radius: 13px;
+  height: 94px;
+  left: 0;
+  position: absolute;
+  top: 237px;
+  width: 306px;
+}
+
+.medical .text-wrapper-8 {
+  color: #ffffff;
+  font-family: "Inter", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  left: 19px;
+  letter-spacing: 1.76px;
+  line-height: 33.9px;
+  position: absolute;
+  top: 264px;
+  width: 226px;
+}
+
+.medical .fluent-doctor {
+  height: 54px;
+  left: 246px;
+  position: absolute;
+  top: 257px;
+  width: 54px;
+}
+
+.medical .ellipse-2 {
+  height: 48px;
+  left: 645px;
+  position: absolute;
+  top: 925px;
+  width: 49px;
+}
+
+.medical .text-wrapper-9 {
+  color: #070707;
+  font-family: "Inter", Helvetica;
+  font-size: 40px;
+  font-weight: 400;
+  left: 104px;
+  letter-spacing: 0;
+  line-height: 42.4px;
+  position: absolute;
+  top: 403px;
+  white-space: nowrap;
+  width: 470px;
+}
+
+.medical .text-wrapper-10 {
+  color: #000000;
+  font-family: "Inter", Helvetica;
+  font-size: 48px;
+  font-weight: 700;
+  left: 104px;
+  letter-spacing: 0;
+  line-height: 50.9px;
+  position: absolute;
+  top: 452px;
+  white-space: nowrap;
+  width: 268px;
+}
+
+.medical .vector-5 {
+  height: 35px;
+  left: 218px;
+  position: absolute;
+  top: 980px;
+  width: 129px;
+}
+
+.medical .overlap-4 {
+  height: 90px;
+  left: 1596px;
+  position: absolute;
+  top: 28px;
+  width: 285px;
+}
+
+.medical .rectangle-5 {
+  height: 90px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 266px;
+}
+
+.medical .text-wrapper-11 {
+  color: #1d1e1e;
+  font-family: "Inter", Helvetica;
+  font-size: 32px;
+  font-weight: 500;
+  left: 66px;
+  letter-spacing: 9.6px;
+  line-height: 33.9px;
+  position: absolute;
+  top: 25px;
+  white-space: nowrap;
+  width: 219px;
+}
+
+.medical .text-wrapper-12 {
+  color: #554c4c;
+  font-family: "Inter", Helvetica;
+  font-size: 32px;
+  font-weight: 500;
+  left: 1228px;
+  letter-spacing: 0;
+  line-height: 33.9px;
+  position: absolute;
+  top: 55px;
+  white-space: nowrap;
+  width: 114px;
+}
+
+.medical .text-wrapper-13 {
+  color: #554c4c;
+  font-family: "Inter", Helvetica;
+  font-size: 32px;
+  font-weight: 500;
+  left: 1384px;
+  letter-spacing: 0;
+  line-height: 33.9px;
+  position: absolute;
+  top: 55px;
+  white-space: nowrap;
+  width: 188px;
+}
+
+.medical .text-wrapper-14 {
+  color: #554c4c;
+  font-family: "Inter", Helvetica;
+  font-size: 32px;
+  font-weight: 500;
+  left: 1016px;
+  letter-spacing: 0;
+  line-height: 33.9px;
+  position: absolute;
+  top: 55px;
+  white-space: nowrap;
+  width: 128px;
+}
+
+.medical .vector-6 {
+  height: 4px;
+  left: 1002px;
+  position: absolute;
+  top: 93px;
+  width: 123px;
+}
